@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="5.0" method="upgrade">
+    <name>com_sigespe</name>
+    <creationDate>Novembro 2025</creationDate>
+    <author>3º Sgt Davi Rocha</author>
+    <copyright>3º BEC - Exército Brasileiro</copyright>
+    <license>GPL v3</license>
+    <version>2.0.0</version>
+    <description>Sistema de Gestão de Pessoal - SIGESPE</description>
+
+    <namespace path="src">Sigespe\Component\Sigespe</namespace>
+
+    <scriptfile>script.php</scriptfile>
+
+    <administration>
+        <menu link="index.php?option=com_sigespe">SIGESPE</menu>
+        
+        <submenu>
+            <menu link="option=com_sigespe&amp;view=visao_corporativa" view="visao_corporativa">Visão Corporativa</menu>
+            <menu link="option=com_sigespe&amp;view=gestao_pessoal" view="gestao_pessoal">Gestão de Pessoal</menu>
+        </submenu>
+        
+        <files folder="admin">
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <folder>sql</folder>
+        </files>
+        
+        <languages folder="languages/admin">
+            <language tag="pt-BR">pt-BR.com_sigespe.ini</language>
+            <language tag="pt-BR">pt-BR.com_sigespe.sys.ini</language>
+        </languages>
+    </administration>
+
+    <files folder="site">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    
+    <languages folder="languages/site">
+        <language tag="pt-BR">pt-BR.com_sigespe.ini</language>
+    </languages>
+
+</extension>
